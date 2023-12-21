@@ -23,6 +23,7 @@
 #pragma once
 
 #include <Arduino.h>
+#include <lwIP_CYW43.h>
 #include "WiFi.h"
 
 #include <inttypes.h>
@@ -259,6 +260,13 @@ public:
         return: gateway ip address value
     */
     IPAddress gatewayIP();
+
+    /*
+        Get the DNS ip address.
+
+        return: IPAddress DNS Server IP
+    */
+    IPAddress dnsIP(uint8_t dns_no = 0);
 
     /*
         Return the current SSID associated with the network

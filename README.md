@@ -4,7 +4,7 @@
 
 Raspberry Pi Pico Arduino core, for all RP2040 boards
 
-This is a port of the RP2040 (Raspberry Pi Pico processor) to the Arduino ecosystem. It uses the bare Raspberry Pi Pico SDK and a custom GCC 10.3/Newlib 4.0 toolchain.
+This is a port of the RP2040 (Raspberry Pi Pico processor) to the Arduino ecosystem. It uses the bare Raspberry Pi Pico SDK and a custom GCC 12.3/Newlib 4.0 toolchain.
 
 # Documentation
 See https://arduino-pico.readthedocs.io/en/latest/ along with the examples for more detailed usage information.
@@ -21,6 +21,7 @@ Read the [Contributing Guide](https://github.com/earlephilhower/arduino-pico/blo
 * Adafruit ItsyBitsy RP2040
 * Adafruit KB2040
 * Adafruit Macropad RP2040
+* Adafruit Metro RP2040
 * Adafruit QTPy RP2040
 * Adafruit STEMMA Friend RP2040
 * Adafruit Trinkey RP2040 QT
@@ -30,6 +31,7 @@ Read the [Contributing Guide](https://github.com/earlephilhower/arduino-pico/blo
 * Cytron Maker Pi RP2040
 * Cytron Maker Nano RP2040
 * DatanoiseTV PicoADK+
+* Degz Suibo RP2040
 * DeRuiLab FlyBoard2040 Core
 * DFRobot Beetle RP2040
 * ElectronicCats Hunter Cat NFC
@@ -49,6 +51,12 @@ Read the [Contributing Guide](https://github.com/earlephilhower/arduino-pico/blo
 * Neko Systems BL2040 Mini
 * nullbits Bit-C PRO
 * Pimoroni PGA2040
+* Pimoroni Plasma2040
+* Pimoroni Tiny2040
+* RAKwireless RAK11300
+* Redscorp RP2040-Eins
+* Redscorp RP2040-ProMini
+* Sea-Picro
 * Seeed Indicator RP2040
 * Seeed XIAO RP2040
 * Silicognition RP2040-Shim
@@ -198,6 +206,7 @@ The installed tools include a version of OpenOCD (in the pqt-openocd directory) 
 * Bluetooth on the PicoW (Classic and BLE) with Keyboard, Mouse, Joystick, and Virtual Serial
 * Generic Arduino USB Serial, Keyboard, Joystick, and Mouse emulation
 * WiFi (Pico W)
+* Ethernet (Wired W5500, W5100, ENC28J60)
 * HTTP client and server (WebServer)
 * SSL/TLS/HTTPS
 * Over-the-Air (OTA) upgrades
@@ -209,7 +218,7 @@ The installed tools include a version of OpenOCD (in the pqt-openocd directory) 
 * Analog stereo audio in using DMA and the built-in ADC
 * Analog stereo audio out using PWM hardware
 * USB drive mode for data loggers (SingleFileDrive)
-* Peripherals:  SPI master, Wire(I2C) master/slave, dual UART, emulated EEPROM, I2S audio input, I2S audio output, Servo
+* Peripherals:  SPI master/slave, Wire(I2C) master/slave, dual UART, emulated EEPROM, I2S audio input/output, Servo
 * printf (i.e. debug) output over USB serial
 
 The RP2040 PIO state machines (SMs) are used to generate jitter-free:
@@ -243,14 +252,14 @@ If you want to contribute or have bugfixes, drop me a note at <earlephilhower@ya
 * [UF2CONV.PY](https://github.com/microsoft/uf2) is by Microsoft Corporation and licensed under the MIT license.
 * Networking and filesystem code taken from the [ESP8266 Arduino Core](https://github.com/esp8266/Arduino) and licensed under the LGPL.
 * DHCP server for AP host mode from the [Micropython Project](https://micropython.org), distributed under the MIT License.
-* [FreeRTOS](https://freertos.org) is Copyright Amazon.com, Inc. or its affiliates, and distributed under the MIT license.
+* [FreeRTOS](https://freertos.org) is copyright Amazon.com, Inc. or its affiliates, and distributed under the MIT license.
 * [lwIP](https://savannah.nongnu.org/projects/lwip/) is (c) the Swedish Institute of Computer Science and licenced under the BSD license.
 * [BearSSL](https://bearssl.org) library written by Thomas Pornin, is distributed under the [MIT License](https://bearssl.org/#legal-details).
 * [UZLib](https://github.com/pfalcon/uzlib) is copyright (c) 2003 Joergen Ibsen and distributed under the zlib license.
 * [LEAmDNS](https://github.com/LaborEtArs/ESP8266mDNS) is copyright multiple authors and distributed under the MIT license.
 * [http-parser](https://github.com/nodejs/http-parser) is copyright Joyent, Inc. and other Node contributors.
-* WebServer code modified from the [ESP32 WebServer](https://github.com/espressif/arduino-esp32/tree/master/libraries/WebServer) and is copyright (c) 2015 Ivan Grokhotkov and others
-
+* WebServer code modified from the [ESP32 WebServer](https://github.com/espressif/arduino-esp32/tree/master/libraries/WebServer) and is copyright (c) 2015 Ivan Grokhotkov and others.
+* [Xoshiro-cpp](https://github.com/Reputeless/Xoshiro-cpp) is copyright (c) 2020 Ryo Suzuki and distributed under the MIT license.
 
 -Earle F. Philhower, III  
  earlephilhower@yahoo.com
